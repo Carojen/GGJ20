@@ -10,6 +10,7 @@ namespace Flaskpost
         {
             Starting,
             Running,
+            Paused,
             Menu,
             Quitting,
         }
