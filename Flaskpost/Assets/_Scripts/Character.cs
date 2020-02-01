@@ -13,28 +13,35 @@ namespace Flaskpost
 
         [SerializeField]
         private GameObject m_Visuals = null;
-        
+
         void OnCollisionEnter(Collision collision)
-        {
+        {            
             var direction = m_Rigidbody.velocity.normalized;
             var magnitude = m_Rigidbody.velocity.magnitude;
+            m_Rigidbody.velocity = Vector3.zero;
+            var force = Vector3.zero;
+            if (collision.gameObject.CompareTag("Board"))
+                force = (Vector3.Reflect(direction, collision.contacts[0].normal)
+                    * magnitude / 2 * m_CharacterSettings.BouncePower) - Physics.gravity;
+            else
+                force = GameManager.Instance.Board.transform.up * magnitude / 2 * m_CharacterSettings.BouncePower -Physics.gravity;
 
-            var force = (Vector3.Reflect(direction, collision.contacts[0].normal)
-                * magnitude/2 * m_CharacterSettings.BouncePower) - Physics.gravity;
-            //Debug.LogFormat("Add force {0}.", force);
+            if (force.magnitude < 2)
+                force = force.normalized * 2;
+
             m_Rigidbody.AddForce(force, ForceMode.Impulse);
         }
 
         private void OnTriggerExit(Collider other)
         {
             if (other.CompareTag("Respawn") && gameObject.activeSelf)
-            {                
+            {
                 var targetPos = FindObjectOfType<GameBoard>().GetComponentInChildren<Collider>().ClosestPointOnBounds(transform.position);
                 targetPos -= m_Rigidbody.velocity;
                 targetPos.y = 3f;
 
-                StartCoroutine(Respawn(targetPos));                
-            }                
+                StartCoroutine(Respawn(targetPos));
+            }
         }
 
         private IEnumerator Respawn(Vector3 position)
