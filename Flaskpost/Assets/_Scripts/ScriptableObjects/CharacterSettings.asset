@@ -9,12 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3adb1de1929d844da638dc6ca127ba8, type: 3}
-  m_Name: InputSettings
+  m_Script: {fileID: 11500000, guid: f9fe1f4bb48ace7409aa74f7d806a938, type: 3}
+  m_Name: CharacterSettings
   m_EditorClassIdentifier: 
-  m_Left: 97
-  m_Right: 100
-  m_Forward: 119
-  m_Back: 115
-  m_TiltPower: 2
-  m_Elasticity: 1
