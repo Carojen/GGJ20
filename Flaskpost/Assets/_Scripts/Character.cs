@@ -25,7 +25,7 @@ namespace Flaskpost
         {              
             var direction = m_Rigidbody.velocity.normalized;
             var magnitude = m_Rigidbody.velocity.magnitude;
-            Debug.LogFormat("Collision {0}.", (magnitude * m_CharacterSettings.BouncePower).ToString());
+            
             m_Rigidbody.AddForce((Vector3.Reflect(direction, collision.contacts[0].normal) 
                 * magnitude * m_CharacterSettings.BouncePower) - Physics.gravity, ForceMode.Impulse);
         }
@@ -52,7 +52,6 @@ namespace Flaskpost
             m_Rigidbody.velocity = Vector3.zero;
             yield return new WaitForSeconds(1f);
 
-            Debug.LogFormat("Respawning");
             m_Visuals?.SetActive(true);
             m_Rigidbody.isKinematic = false;
         }
