@@ -127,6 +127,7 @@ MonoBehaviour:
   m_CharacterSettings: {fileID: 11400000, guid: 61f052b7f1ae49c42be30a6cfd6a15e7,
     type: 2}
   m_Rigidbody: {fileID: 7803239014015132687}
+  m_Visuals: {fileID: 972892318152496922}
 --- !u!136 &8465991534251527288
 CapsuleCollider:
   m_ObjectHideFlags: 0
