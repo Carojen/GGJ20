@@ -26,7 +26,9 @@ namespace Flaskpost
             else
                 force = GameManager.Instance.Board.transform.up * magnitude / 2 * m_CharacterSettings.BouncePower -Physics.gravity;
 
-            if (force.magnitude < 2)
+            if (force.magnitude > 10)
+                force = force.normalized *10;
+            else if(force.magnitude < 2)
                 force = force.normalized * 2;
 
             m_Rigidbody.AddForce(force, ForceMode.Impulse);
