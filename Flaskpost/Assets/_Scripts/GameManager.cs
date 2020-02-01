@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Flaskpost
 {
@@ -41,6 +42,34 @@ namespace Flaskpost
             CurrentState = GameState.Running;
         }
 
+        private void Update()
+        {
+            if (CurrentState == GameState.Running)
+            {
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    Restart();
+                }
+                else if (Input.GetKeyDown(KeyCode.P))
+                {
+                    CurrentState = GameState.Menu;
+                    Pause();
+                }
+                else if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    Quit();
+                }
+            }
+            else if (CurrentState == GameState.Menu)
+            {
+                if (Input.GetKeyDown(KeyCode.P))
+                {
+                    CurrentState = GameState.Running;
+                    Unpause();
+                }
+            }
+        }
+
         public void Pause()
         {
             IsPaused = true;
@@ -49,6 +78,12 @@ namespace Flaskpost
         public void Unpause()
         {
             IsPaused = false;
+        }
+
+       public void Restart()
+        {
+            CurrentState = GameState.Starting;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         public void Quit()
@@ -63,7 +98,11 @@ namespace Flaskpost
             //while(endAnimation running)
             yield return null;
 
-            Application.Quit();
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+          Application.Quit();
+#endif
         }
     }
 }
