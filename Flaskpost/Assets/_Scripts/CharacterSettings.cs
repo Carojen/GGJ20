@@ -13,6 +13,10 @@ namespace Flaskpost
         [SerializeField]
         [Range(0f, 5f)]
         private float m_Gravity = 1f;
+
+        [SerializeField]
+        private float m_RespawnHeight = 3f;
+        public float RespawnHeight { get { return m_RespawnHeight; } }
         
         public void OnValidate()
         {            
