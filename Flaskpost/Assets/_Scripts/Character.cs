@@ -14,20 +14,15 @@ namespace Flaskpost
         [SerializeField]
         private GameObject m_Visuals = null;
         
-        private void Update()
-        {
-            if(Input.GetKeyDown(KeyCode.Space))
-                m_Rigidbody.AddForce(Vector3.Reflect(-transform.up, transform.up * m_CharacterSettings.BouncePower * 0.5f),
-                               ForceMode.Impulse);
-        }
-
         void OnCollisionEnter(Collision collision)
-        {              
+        {
             var direction = m_Rigidbody.velocity.normalized;
             var magnitude = m_Rigidbody.velocity.magnitude;
-            
-            m_Rigidbody.AddForce((Vector3.Reflect(direction, collision.contacts[0].normal) 
-                * magnitude * m_CharacterSettings.BouncePower) - Physics.gravity, ForceMode.Impulse);
+
+            var force = (Vector3.Reflect(direction, collision.contacts[0].normal)
+                * magnitude * m_CharacterSettings.BouncePower) - Physics.gravity;
+            Debug.LogFormat("Add log {0}.", force);
+            m_Rigidbody.AddForce(force, ForceMode.Impulse);
         }
 
         private void OnTriggerExit(Collider other)
