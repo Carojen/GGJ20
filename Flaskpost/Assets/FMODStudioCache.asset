@@ -1,5 +1,74 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8744510080225198264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bounce
+  guid: 6989cb30102c4b4b9b77d0d72ed4e9ed
+  Banks:
+  - {fileID: -7207814499819562528}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 823
+--- !u!114 &-7865549513087803774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Menu
+  guid: 724a5b958a57b14fbba0809a47eaa3fe
+  Banks:
+  - {fileID: -7207814499819562528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 721
+--- !u!114 &-7736642095818606955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Purr
+  guid: 88a2a2f9941f704a806fe056558d2fe3
+  Banks:
+  - {fileID: -7207814499819562528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6522
 --- !u!114 &-7207814499819562528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,11 +83,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: E:\Unity Games\Barfight Bytes\GGJ20\Flaskpost\Assets\_Audio\Desktop\Master
     Bank.bank
-  lastModified: 637161763272435998
+  lastModified: 637161798688654391
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 31484800
+    Value: 33768000
   Exists: 1
 --- !u!114 &-6792007652950532539
 MonoBehaviour:
@@ -39,10 +108,50 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 2434553015912509056}
   MinDistance: 0
   MaxDistance: 0
   Length: 39183
+--- !u!114 &-5935673405626490451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Victory
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &-4484546420267358156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Start
+  guid: 18f3cff0dcfef44c9ac1d15f50408d57
+  Banks:
+  - {fileID: -7207814499819562528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1582
 --- !u!114 &-2601668855831325284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,12 +208,31 @@ MonoBehaviour:
   - {fileID: 6720194801394086787}
   - {fileID: -7207814499819562528}
   EditorEvents:
-  - {fileID: 8259312230273620843}
   - {fileID: -6792007652950532539}
+  - {fileID: -4484546420267358156}
+  - {fileID: -7865549513087803774}
+  - {fileID: -7736642095818606955}
+  - {fileID: -8744510080225198264}
   MasterBankRef: {fileID: -7207814499819562528}
   StringsBankRef: {fileID: 6720194801394086787}
-  stringsBankWriteTime: 637161763272445999
+  stringsBankWriteTime: 637161798688674346
   cacheVersion: 2
+--- !u!114 &2434553015912509056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Victory
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &6720194801394086787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,11 +246,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\_Audio\Desktop\Master Bank.strings.bank
-  lastModified: 637161763272445999
+  lastModified: 637161798688674346
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 796
+    Value: 982
   Exists: 1
 --- !u!114 &8259312230273620843
 MonoBehaviour:
