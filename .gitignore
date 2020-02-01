@@ -2,3 +2,6 @@
 *.log
 Flaskpost/fmod_editor.log
 Flaskpost/Assets/FMODStudioCache.asset
+*.bank
+Flaskpost/fmod_editor.log
+Flaskpost/fmod.log
