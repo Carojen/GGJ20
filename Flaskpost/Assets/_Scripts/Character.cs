@@ -20,8 +20,8 @@ namespace Flaskpost
             var magnitude = m_Rigidbody.velocity.magnitude;
 
             var force = (Vector3.Reflect(direction, collision.contacts[0].normal)
-                * magnitude * m_CharacterSettings.BouncePower) - Physics.gravity;
-            Debug.LogFormat("Add log {0}.", force);
+                * magnitude/2 * m_CharacterSettings.BouncePower) - Physics.gravity;
+            //Debug.LogFormat("Add force {0}.", force);
             m_Rigidbody.AddForce(force, ForceMode.Impulse);
         }
 
