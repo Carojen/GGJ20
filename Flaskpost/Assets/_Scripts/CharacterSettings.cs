@@ -5,7 +5,7 @@ namespace Flaskpost
     [CreateAssetMenu(fileName = "CharacterSettings", menuName = "ScriptableObjects/CharacterSettings", order = 1)]
     public class CharacterSettings : ScriptableObject
     {
-        //[SerializeField]
+        [SerializeField]
         [Range(0f, 10f)]
         private float m_BouncePower = 1f;
         public float BouncePower { get { return m_BouncePower; } }
@@ -13,6 +13,10 @@ namespace Flaskpost
         [SerializeField]
         [Range(0f, 5f)]
         private float m_Gravity = 1f;
+
+        [SerializeField]
+        private float m_RespawnHeight = 3f;
+        public float RespawnHeight { get { return m_RespawnHeight; } }
         
         public void OnValidate()
         {            
