@@ -17,4 +17,4 @@ MonoBehaviour:
   m_Forward: 119
   m_Back: 115
   m_TiltPower: 0.5
-  m_Elasticity: 0
+  m_Elasticity: 1
