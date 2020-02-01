@@ -29,6 +29,17 @@ namespace Flaskpost
 
         public bool IsPaused { get; private set; } = false;
 
+        private GameBoard m_Board = null;
+        public GameBoard Board
+        {
+            get
+            {
+                if (m_Board == null)
+                    m_Board = FindObjectOfType<GameBoard>();
+                return m_Board;
+            }
+        }
+
         private void Awake()
         {
             if (m_Instance == null)
@@ -40,6 +51,8 @@ namespace Flaskpost
         private void Start()
         {
             CurrentState = GameState.Running;
+            if(m_Board == null)
+                m_Board = FindObjectOfType<GameBoard>();
         }
 
         private void Update()
@@ -80,7 +93,7 @@ namespace Flaskpost
             IsPaused = false;
         }
 
-       public void Restart()
+        public void Restart()
         {
             CurrentState = GameState.Starting;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
