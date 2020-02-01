@@ -154,7 +154,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae0f3a7e2d72c1428326c5518fdc2f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings: {fileID: 11400000, guid: 8c74c77f73b53464781f63009f1afbba, type: 2}
+  settings: {fileID: 11400000, guid: e0de8dde87baf064ebff4c4fd0782ec8, type: 2}
 --- !u!1001 &1672311965758602544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -542,6 +542,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784644211832103102, guid: 99c7f4cda225ec5458b372f70f31ca0c,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99c7f4cda225ec5458b372f70f31ca0c, type: 3}

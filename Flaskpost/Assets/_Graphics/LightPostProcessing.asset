@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee001c9e6d47a614db4b82e1b2199ebe, type: 3}
-  m_Name: LightPost_processing
+  m_Name: LightPostProcessing
   m_EditorClassIdentifier: 
   bloomExpanded: 0
   bloomEnabled: 0
@@ -27,12 +27,12 @@ MonoBehaviour:
   colorizeEnabled: 0
   colorize:
     serializedVersion: 2
-    rgba: 1694474990
-  vignetteExpanded: 0
+    rgba: 1685238006
+  vignetteExpanded: 1
   vignetteEnabled: 1
-  vignetteBeginRadius: 0.72
-  vignetteExpandRadius: 1.439
-  vignetteColor: {r: 0.3838664, g: 0.22312212, b: 0.4339623, a: 1}
+  vignetteBeginRadius: 0.696
+  vignetteExpandRadius: 1.717
+  vignetteColor: {r: 0.3696115, g: 0.21084018, b: 0.4339623, a: 1}
   brightnessContrastExpanded: 0
   brightnessContrastEnabled: 0
   contrast: 0
