@@ -220,6 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 653673677}
+  - component: {fileID: 653673678}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -242,6 +243,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &653673678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653673676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf68f6bd7c4e1c4e9a023e22c6d3249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicEmitter: {fileID: 996040462}
+--- !u!1 &965704897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7922604783633119402, guid: d19b384c2123adf49a1ee0b235754cbc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5028625276991862587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &965704898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965704897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Bounce
+  PlayEvent: 7
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &996040460
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/Music n ambience/Gameplay_Music
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   CollisionTag: 
   AllowFadeout: 1
