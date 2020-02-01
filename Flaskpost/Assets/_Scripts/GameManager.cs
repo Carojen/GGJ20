@@ -26,7 +26,7 @@ namespace Flaskpost
             }
         }
 
-
+        public bool IsPaused { get; private set; } = false;
 
         private void Awake()
         {
@@ -43,12 +43,12 @@ namespace Flaskpost
 
         public void Pause()
         {
-
+            IsPaused = true;
         }
 
         public void Unpause()
         {
-
+            IsPaused = false;
         }
 
         public void Quit()

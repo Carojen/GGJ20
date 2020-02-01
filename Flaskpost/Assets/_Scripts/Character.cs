@@ -1,9 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Character : MonoBehaviour
+namespace Flaskpost
 {
-    [SerializeField]
-    private CharacterSettings m_CharacterSettings = null;
+    public class Character : MonoBehaviour
+    {
+        [SerializeField]
+        private CharacterSettings m_CharacterSettings = null;
+
+        private void Update()
+        {
+
+        }
+
+        private void Bounce()
+        {
+
+        }
+
+    }
 }
