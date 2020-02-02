@@ -27,13 +27,13 @@ MonoBehaviour:
   colorizeEnabled: 0
   colorize:
     serializedVersion: 2
-    rgba: 1685238006
-  vignetteExpanded: 1
+    rgba: 1693872883
+  vignetteExpanded: 0
   vignetteEnabled: 1
-  vignetteBeginRadius: 0.696
-  vignetteExpandRadius: 1.717
+  vignetteBeginRadius: 0.623
+  vignetteExpandRadius: 1.35
   vignetteColor: {r: 0.3696115, g: 0.21084018, b: 0.4339623, a: 1}
-  brightnessContrastExpanded: 0
+  brightnessContrastExpanded: 1
   brightnessContrastEnabled: 0
   contrast: 0
   brightness: 0
