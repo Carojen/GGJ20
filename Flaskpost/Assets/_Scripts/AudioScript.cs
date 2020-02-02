@@ -21,18 +21,6 @@ public class AudioScript : MonoBehaviour
 		}
 		else
 			Debug.Log ("AudioScript. musicEmitter NOT Started");
-		AudioOnRestart();
 	}
 
-	public void AudioOnVictory()
-	{
-		Debug.Log("AudioScript. AudioOnVictory!");
-		musicEmitter.SetParameter("Victory", 1f);
-	}
-	
-	public void AudioOnRestart()
-	{
-		Debug.Log("AudioScript. AudioOnRestart (or Start)");
-		musicEmitter.SetParameter("Victory", 0f);
-	}
 }

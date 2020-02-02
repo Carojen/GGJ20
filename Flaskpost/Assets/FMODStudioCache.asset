@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: event:/SFX/Bounce
-  guid: 6989cb30102c4b4b9b77d0d72ed4e9ed
+  guid: 01fb78ab2a207b4595274b33fc2f4f7f
   Banks:
-  - {fileID: 1002507405354808152}
+  - {fileID: -5603467808890098456}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 823
+  Length: 290
 --- !u!114 &-8083011974352002902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,14 +38,37 @@ MonoBehaviour:
   Path: event:/SFX/Victory
   guid: 415d4db12b3ce34883ed49a62340a23a
   Banks:
-  - {fileID: 1002507405354808152}
+  - {fileID: -5603467808890098456}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 3236
+  Length: 3544
+--- !u!114 &-8045744242510581354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI-knappljud
+  guid: 724a5b958a57b14fbba0809a47eaa3fe
+  Banks:
+  - {fileID: -5603467808890098456}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 565
 --- !u!114 &-7865549513087803774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +150,7 @@ MonoBehaviour:
   Path: event:/Music n ambience/Gameplay_Music
   guid: 739914a09782b14b9c6cc109aabfa11b
   Banks:
-  - {fileID: 1002507405354808152}
+  - {fileID: -5603467808890098456}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -151,6 +174,26 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &-5603467808890098456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: E:\Unity Games\Barfight Bytes\GGJ20\Flaskpost\Assets\_Audio\Desktop\Master
+    Bank.bank
+  lastModified: 637162407606370497
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 38080384
+  Exists: 1
 --- !u!114 &-4484546420267358156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,18 +271,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 6720194801394086787}
-  - {fileID: 1002507405354808152}
+  - {fileID: -5603467808890098456}
   EditorEvents:
   - {fileID: -6792007652950532539}
-  - {fileID: -4484546420267358156}
-  - {fileID: -7865549513087803774}
-  - {fileID: -7736642095818606955}
   - {fileID: -8744510080225198264}
   - {fileID: -8083011974352002902}
   - {fileID: 1507586454622755677}
-  MasterBankRef: {fileID: 1002507405354808152}
+  - {fileID: 7435741429540587090}
+  - {fileID: -8045744242510581354}
+  MasterBankRef: {fileID: -5603467808890098456}
   StringsBankRef: {fileID: 6720194801394086787}
-  stringsBankWriteTime: 637161921494937771
+  stringsBankWriteTime: 637162407606390392
   cacheVersion: 2
 --- !u!114 &1002507405354808152
 MonoBehaviour:
@@ -274,16 +316,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: event:/SFX/Repair
-  guid: dfe650ab81b95d4695c9ffc80ca85ed2
+  guid: d0efd20f51c0fe45bdbc031e7cbda1a8
   Banks:
-  - {fileID: 1002507405354808152}
+  - {fileID: -5603467808890098456}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1166
+  Length: 4099
 --- !u!114 &2434553015912509056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,12 +355,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\_Audio\Desktop\Master Bank.strings.bank
-  lastModified: 637161921494937771
+  lastModified: 637162407606390392
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1094
+    Value: 1084
   Exists: 1
+--- !u!114 &7435741429540587090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music n ambience/CatAmbience
+  guid: 6411b5804ca9d74886a6673da7cacb2c
+  Banks:
+  - {fileID: -5603467808890098456}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20000
 --- !u!114 &8259312230273620843
 MonoBehaviour:
   m_ObjectHideFlags: 0
