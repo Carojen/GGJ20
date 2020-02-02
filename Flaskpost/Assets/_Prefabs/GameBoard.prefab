@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 5983523472976431856}
   m_Layer: 0
   m_Name: GameBoard
-  m_TagString: Untagged
+  m_TagString: Board
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,6 +376,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8214618097076235208, guid: 8d13c98b25fae7142a2adf469593fc9b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214618097076235208, guid: 8d13c98b25fae7142a2adf469593fc9b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214618095947581335, guid: 8d13c98b25fae7142a2adf469593fc9b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.719
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214618095947581335, guid: 8d13c98b25fae7142a2adf469593fc9b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.379
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214618097001978396, guid: 8d13c98b25fae7142a2adf469593fc9b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.809
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214618097001978396, guid: 8d13c98b25fae7142a2adf469593fc9b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.171
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214618097265173538, guid: 8d13c98b25fae7142a2adf469593fc9b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.275
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214618097265173538, guid: 8d13c98b25fae7142a2adf469593fc9b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.408
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d13c98b25fae7142a2adf469593fc9b, type: 3}
 --- !u!4 &1412329769326082364 stripped
@@ -399,7 +439,7 @@ PrefabInstance:
     - target: {fileID: 908052936628548828, guid: 448834379462f70418d8519b9f27982a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.79
       objectReference: {fileID: 0}
     - target: {fileID: 908052936628548828, guid: 448834379462f70418d8519b9f27982a,
         type: 3}
@@ -409,7 +449,7 @@ PrefabInstance:
     - target: {fileID: 908052936628548828, guid: 448834379462f70418d8519b9f27982a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.03
       objectReference: {fileID: 0}
     - target: {fileID: 908052936628548828, guid: 448834379462f70418d8519b9f27982a,
         type: 3}
