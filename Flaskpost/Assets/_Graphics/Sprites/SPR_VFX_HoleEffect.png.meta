@@ -1,7 +1,100 @@
 fileFormatVersion: 2
 guid: b96654b3ffe31e940b3bdcaecd33bbce
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1760621860874674746
+    second: SPR_VFX_HoleEffect_0
+  - first:
+      213: -4809499037684250525
+    second: SPR_VFX_HoleEffect_1
+  - first:
+      213: -8733260827391266263
+    second: SPR_VFX_HoleEffect_2
+  - first:
+      213: -1991659968676659583
+    second: SPR_VFX_HoleEffect_3
+  - first:
+      213: -6049367137551540045
+    second: SPR_VFX_HoleEffect_4
+  - first:
+      213: 4956404764194740191
+    second: SPR_VFX_HoleEffect_5
+  - first:
+      213: -3445533744728131949
+    second: SPR_VFX_HoleEffect_6
+  - first:
+      213: -6672747427074120672
+    second: SPR_VFX_HoleEffect_7
+  - first:
+      213: -3743613108863506432
+    second: SPR_VFX_HoleEffect_8
+  - first:
+      213: 5397191422044237910
+    second: SPR_VFX_HoleEffect_9
+  - first:
+      213: 2544906465617218947
+    second: SPR_VFX_HoleEffect_10
+  - first:
+      213: 5149589910481891233
+    second: SPR_VFX_HoleEffect_11
+  - first:
+      213: -3416280080087315833
+    second: SPR_VFX_HoleEffect_12
+  - first:
+      213: -8529628857525086239
+    second: SPR_VFX_HoleEffect_13
+  - first:
+      213: 1117968560742932300
+    second: SPR_VFX_HoleEffect_14
+  - first:
+      213: -6115566795058176048
+    second: SPR_VFX_HoleEffect_15
+  - first:
+      213: 1575983097453878281
+    second: SPR_VFX_HoleEffect_16
+  - first:
+      213: -6197593446761973563
+    second: SPR_VFX_HoleEffect_17
+  - first:
+      213: 6140001394239819941
+    second: SPR_VFX_HoleEffect_18
+  - first:
+      213: -5048320583503755738
+    second: SPR_VFX_HoleEffect_19
+  - first:
+      213: 7901760595457969515
+    second: SPR_VFX_HoleEffect_20
+  - first:
+      213: -5407899841605935140
+    second: SPR_VFX_HoleEffect_21
+  - first:
+      213: 5826484116895410802
+    second: SPR_VFX_HoleEffect_22
+  - first:
+      213: 4309146060171721202
+    second: SPR_VFX_HoleEffect_23
+  - first:
+      213: 1859520082224206375
+    second: SPR_VFX_HoleEffect_24
+  - first:
+      213: -1998648226935356415
+    second: SPR_VFX_HoleEffect_25
+  - first:
+      213: -6995563582258187201
+    second: SPR_VFX_HoleEffect_26
+  - first:
+      213: -949403729205432728
+    second: SPR_VFX_HoleEffect_27
+  - first:
+      213: -8797706596432016628
+    second: SPR_VFX_HoleEffect_28
+  - first:
+      213: -4532597791397320545
+    second: SPR_VFX_HoleEffect_29
+  - first:
+      213: -2626666919443032621
+    second: SPR_VFX_HoleEffect_30
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +133,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -120,7 +213,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SPR_VFX_HoleEffect_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4155727a9b68a4dbc881b4194d85e5
+      internalID: 1760621860874674746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_VFX_HoleEffect_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15a22bbe74e2124b9666e731a1c3140
+      internalID: -4809499037684250525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_VFX_HoleEffect_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a772c0bcf075d74489714b13a90c30f7
+      internalID: -8733260827391266263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_VFX_HoleEffect_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47e8bc3d805bed4581bd66bb9c902e0
+      internalID: -1991659968676659583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_VFX_HoleEffect_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afc73c76dab4484a9eb35eb632847a1
+      internalID: -6049367137551540045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_VFX_HoleEffect_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e87c1821ec6cef48a7e54a69493b0b7
+      internalID: 4956404764194740191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_VFX_HoleEffect_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d54521455ee1084daf06d169da15725
+      internalID: -3445533744728131949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_VFX_HoleEffect_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4643063849793a469e3a65582724ff5
+      internalID: -6672747427074120672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_VFX_HoleEffect_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f491d59026b418e42a682d44dcd46b2a
+      internalID: -3743613108863506432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
