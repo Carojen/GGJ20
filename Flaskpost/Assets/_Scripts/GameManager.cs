@@ -7,7 +7,6 @@ namespace Flaskpost
 {
     public class GameManager : MonoBehaviour
     {
-
         [SerializeField]
         private GameObject m_MenuScreen = null;
 
@@ -89,11 +88,13 @@ namespace Flaskpost
         public void Pause()
         {
             IsPaused = true;
+            FindObjectOfType<Character>().Freeze();
         }
 
         public void Unpause()
         {
             IsPaused = false;
+            FindObjectOfType<Character>().Unfreeze();
         }
 
         public void OpenMenu()

@@ -59,5 +59,17 @@ namespace Flaskpost
             m_Visuals?.SetActive(true);
             m_Rigidbody.isKinematic = false;
         }
+
+        public void Freeze()
+        {
+            m_Rigidbody.isKinematic = true;
+            m_Rigidbody.gameObject.SetActive(false);
+        }
+
+        public void Unfreeze()
+        {
+            m_Rigidbody.isKinematic = false;
+            m_Rigidbody.gameObject.SetActive(true);
+        }
     }
 }
