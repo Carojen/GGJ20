@@ -7,6 +7,9 @@ namespace Flaskpost
 {
     public class GameManager : MonoBehaviour
     {
+        [SerializeField]
+        private GameObject m_MenuScreen = null;
+
         public enum GameState
         {
             Starting,
@@ -43,7 +46,10 @@ namespace Flaskpost
         private void Awake()
         {
             if (m_Instance == null)
+            {
                 m_Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }                
             else if (m_Instance != this)
                 Destroy(this.gameObject);
         }
@@ -51,7 +57,7 @@ namespace Flaskpost
         private void Start()
         {
             CurrentState = GameState.Running;
-            if(m_Board == null)
+            if (m_Board == null)
                 m_Board = FindObjectOfType<GameBoard>();
         }
 
@@ -63,14 +69,10 @@ namespace Flaskpost
                 {
                     Restart();
                 }
-                else if (Input.GetKeyDown(KeyCode.P))
+                else if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
                 {
-                    CurrentState = GameState.Menu;
+                    OpenMenu();
                     Pause();
-                }
-                else if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    Quit();
                 }
             }
             else if (CurrentState == GameState.Menu)
@@ -86,11 +88,18 @@ namespace Flaskpost
         public void Pause()
         {
             IsPaused = true;
+            FindObjectOfType<Character>().Freeze();
         }
 
         public void Unpause()
         {
             IsPaused = false;
+            FindObjectOfType<Character>().Unfreeze();
+        }
+
+        public void OpenMenu()
+        {
+            CurrentState = GameState.Menu;
         }
 
         public void Restart()
