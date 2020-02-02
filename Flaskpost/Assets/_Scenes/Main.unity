@@ -356,6 +356,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &874747840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3012894772594769718, guid: b700ea41af0432249bbdab801bd993aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 7620714914200179023}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &965704902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3779169492684393458, guid: d19b384c2123adf49a1ee0b235754cbc,
@@ -675,6 +681,11 @@ PrefabInstance:
       propertyPath: m_MenuScreen
       value: 
       objectReference: {fileID: 6759355578354660479}
+    - target: {fileID: 2946544114413154786, guid: 38989beeebb757d449e4499a1fcbf2a1,
+        type: 3}
+      propertyPath: m_WinScreen
+      value: 
+      objectReference: {fileID: 874747840}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38989beeebb757d449e4499a1fcbf2a1, type: 3}
 --- !u!1001 &3510341794063308036
