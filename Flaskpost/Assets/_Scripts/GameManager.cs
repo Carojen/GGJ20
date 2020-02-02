@@ -156,6 +156,8 @@ namespace Flaskpost
 
         private bool CheckWinCondition()
         {
+            if (m_Targets == null || m_Targets.Length == 0)
+                return false;
             foreach (var target in m_Targets)
             {
                 if (!target.Repaired)
