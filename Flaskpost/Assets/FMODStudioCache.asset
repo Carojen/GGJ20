@@ -188,7 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: E:\Unity Games\Barfight Bytes\GGJ20\Flaskpost\Assets\_Audio\Desktop\Master
     Bank.bank
-  lastModified: 637162459342869948
+  lastModified: 637162479710907262
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -281,7 +281,7 @@ MonoBehaviour:
   - {fileID: -8045744242510581354}
   MasterBankRef: {fileID: -5603467808890098456}
   StringsBankRef: {fileID: 6720194801394086787}
-  stringsBankWriteTime: 637162459342889894
+  stringsBankWriteTime: 637162479710917263
   cacheVersion: 2
 --- !u!114 &1002507405354808152
 MonoBehaviour:
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\_Audio\Desktop\Master Bank.strings.bank
-  lastModified: 637162459342889894
+  lastModified: 637162479710917263
   LoadResult: 0
   FileSizes:
   - Name: 
