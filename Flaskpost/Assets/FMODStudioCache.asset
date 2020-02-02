@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/SFX/Bounce
   guid: 6989cb30102c4b4b9b77d0d72ed4e9ed
   Banks:
-  - {fileID: -7207814499819562528}
+  - {fileID: 1002507405354808152}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -23,6 +23,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 823
+--- !u!114 &-8083011974352002902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Victory
+  guid: 415d4db12b3ce34883ed49a62340a23a
+  Banks:
+  - {fileID: 1002507405354808152}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3236
 --- !u!114 &-7865549513087803774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,7 +61,7 @@ MonoBehaviour:
   Path: event:/SFX/Menu
   guid: 724a5b958a57b14fbba0809a47eaa3fe
   Banks:
-  - {fileID: -7207814499819562528}
+  - {fileID: 1002507405354808152}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -61,7 +84,7 @@ MonoBehaviour:
   Path: event:/SFX/Purr
   guid: 88a2a2f9941f704a806fe056558d2fe3
   Banks:
-  - {fileID: -7207814499819562528}
+  - {fileID: 1002507405354808152}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -104,12 +127,11 @@ MonoBehaviour:
   Path: event:/Music n ambience/Gameplay_Music
   guid: 739914a09782b14b9c6cc109aabfa11b
   Banks:
-  - {fileID: -7207814499819562528}
+  - {fileID: 1002507405354808152}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters:
-  - {fileID: 2434553015912509056}
+  Parameters: []
   MinDistance: 0
   MaxDistance: 0
   Length: 39183
@@ -144,7 +166,7 @@ MonoBehaviour:
   Path: event:/SFX/Start
   guid: 18f3cff0dcfef44c9ac1d15f50408d57
   Banks:
-  - {fileID: -7207814499819562528}
+  - {fileID: 1002507405354808152}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -206,17 +228,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 6720194801394086787}
-  - {fileID: -7207814499819562528}
+  - {fileID: 1002507405354808152}
   EditorEvents:
   - {fileID: -6792007652950532539}
   - {fileID: -4484546420267358156}
   - {fileID: -7865549513087803774}
   - {fileID: -7736642095818606955}
   - {fileID: -8744510080225198264}
-  MasterBankRef: {fileID: -7207814499819562528}
+  - {fileID: -8083011974352002902}
+  - {fileID: 1507586454622755677}
+  MasterBankRef: {fileID: 1002507405354808152}
   StringsBankRef: {fileID: 6720194801394086787}
-  stringsBankWriteTime: 637161798688674346
+  stringsBankWriteTime: 637161921494937771
   cacheVersion: 2
+--- !u!114 &1002507405354808152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Sofie\Documents\UnityProjekt\GGJ20\Flaskpost\Assets\_Audio\Desktop\Master
+    Bank.bank
+  lastModified: 637161921497993883
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 33993728
+  Exists: 1
+--- !u!114 &1507586454622755677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Repair
+  guid: dfe650ab81b95d4695c9ffc80ca85ed2
+  Banks:
+  - {fileID: 1002507405354808152}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1166
 --- !u!114 &2434553015912509056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,11 +313,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\_Audio\Desktop\Master Bank.strings.bank
-  lastModified: 637161798688674346
+  lastModified: 637161921494937771
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 982
+    Value: 1094
   Exists: 1
 --- !u!114 &8259312230273620843
 MonoBehaviour:
