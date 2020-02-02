@@ -19,8 +19,15 @@ namespace Flaskpost
             if (!other.gameObject.CompareTag("Player"))
                 return;
 
-            m_Target?.SetActive(false);
+            m_Target?.SetActive(false);            
+            EffectRoutine();
+        }
+
+        private IEnumerator EffectRoutine()
+        {
             m_Effects?.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            m_Effects?.SetActive(false);
         }
     }
 }
