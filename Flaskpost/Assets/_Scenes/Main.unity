@@ -1054,6 +1054,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 3012894772594769718, guid: b700ea41af0432249bbdab801bd993aa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1649304321461885086, guid: b700ea41af0432249bbdab801bd993aa,
         type: 3}
       propertyPath: m_LocalPosition.x
