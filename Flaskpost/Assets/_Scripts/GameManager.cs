@@ -47,6 +47,8 @@ namespace Flaskpost
             }
         }
 
+        private Character m_Character = null;
+
         private void Awake()
         {
             if (m_Instance == null)
@@ -66,6 +68,8 @@ namespace Flaskpost
             if (m_Board == null)
                 m_Board = FindObjectOfType<GameBoard>();
             m_Targets = FindObjectsOfType<Target>();
+
+            m_Character = FindObjectOfType<Character>();
         }
 
         private void Update()
@@ -115,18 +119,26 @@ namespace Flaskpost
         public void Pause()
         {
             IsPaused = true;
-            FindObjectOfType<Character>().Freeze();
+            m_Character.Freeze();
         }
 
         public void Unpause()
         {
             IsPaused = false;
-            FindObjectOfType<Character>().Unfreeze();
+            m_Character.Unfreeze();
         }
 
         public void OpenMenu()
         {
             CurrentState = GameState.Menu;
+            m_MenuScreen.SetActive(true);
+        }
+
+        public void CloseMenu()
+        {
+            CurrentState = GameState.Running;
+            Unpause();
+            m_MenuScreen.SetActive(false);
         }
 
         public void Restart()

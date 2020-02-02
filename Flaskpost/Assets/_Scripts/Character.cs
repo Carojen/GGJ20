@@ -24,14 +24,13 @@ namespace Flaskpost
         }
 
         void OnCollisionEnter(Collision collision)
-        {
-            
+        {            
             var direction = m_Rigidbody.velocity.normalized;
             var magnitude = m_Rigidbody.velocity.magnitude;
             m_Rigidbody.velocity = Vector3.zero;
             var force = Vector3.zero;
             if (collision.gameObject.CompareTag("Board"))
-                force = (Vector3.Reflect(direction, collision.contacts[0].normal)
+                force = (Vector3.Reflect(direction, (collision.contacts[0].normal + GameManager.Instance.Board.transform.up * 0.5f).normalized)
                     * magnitude / 2 * m_CharacterSettings.BouncePower) - Physics.gravity;
             else
                 force = GameManager.Instance.Board.transform.up * magnitude / 2 * m_CharacterSettings.BouncePower -Physics.gravity;
