@@ -7,6 +7,7 @@ namespace Flaskpost
 {
     public class GameManager : MonoBehaviour
     {
+
         [SerializeField]
         private GameObject m_MenuScreen = null;
 
@@ -46,7 +47,10 @@ namespace Flaskpost
         private void Awake()
         {
             if (m_Instance == null)
+            {
                 m_Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }                
             else if (m_Instance != this)
                 Destroy(this.gameObject);
         }
