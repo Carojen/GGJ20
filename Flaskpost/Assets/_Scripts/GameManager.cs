@@ -10,11 +10,15 @@ namespace Flaskpost
         [SerializeField]
         private GameObject m_MenuScreen = null;
 
+        [SerializeField]
+        private GameObject m_WinScreen = null;
+
         public enum GameState
         {
             Starting,
             Running,
             Menu,
+            WinScreen,
             Quitting,
         }
         public GameState CurrentState { get; private set; } = GameState.Starting;
@@ -48,17 +52,20 @@ namespace Flaskpost
             if (m_Instance == null)
             {
                 m_Instance = this;
-                DontDestroyOnLoad(gameObject);
-            }                
+                //DontDestroyOnLoad(gameObject);
+            }
             else if (m_Instance != this)
                 Destroy(this.gameObject);
         }
+
+        private Target[] m_Targets = null;
 
         private void Start()
         {
             CurrentState = GameState.Running;
             if (m_Board == null)
                 m_Board = FindObjectOfType<GameBoard>();
+            m_Targets = FindObjectsOfType<Target>();
         }
 
         private void Update()
@@ -74,6 +81,10 @@ namespace Flaskpost
                     OpenMenu();
                     Pause();
                 }
+                else if(CheckWinCondition())
+                {
+                    DisplayWinScreen();
+                }
             }
             else if (CurrentState == GameState.Menu)
             {
@@ -83,6 +94,22 @@ namespace Flaskpost
                     Unpause();
                 }
             }
+        }
+
+        private void DisplayWinScreen()
+        {
+            CurrentState = GameState.WinScreen;
+            Pause();
+            m_WinScreen.SetActive(true);
+            StartCoroutine(WinRoutine());
+        }
+
+        private IEnumerator WinRoutine()
+        {
+            yield return new WaitForSeconds(5f);
+            m_WinScreen.SetActive(false);
+            CurrentState = GameState.Starting;
+            Restart();            
         }
 
         public void Pause()
@@ -125,6 +152,18 @@ namespace Flaskpost
 #else
           Application.Quit();
 #endif
+        }
+
+        private bool CheckWinCondition()
+        {
+            foreach (var target in m_Targets)
+            {
+                if (!target.Repaired)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

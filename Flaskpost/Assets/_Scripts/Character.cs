@@ -14,8 +14,18 @@ namespace Flaskpost
         [SerializeField]
         private GameObject m_Visuals = null;
 
+        [SerializeField]
+        private Animator m_Animator = null;
+
+        private void Start()
+        {
+            if (m_Animator == null)
+                m_Animator = m_Visuals.GetComponentInChildren<Animator>();
+        }
+
         void OnCollisionEnter(Collision collision)
-        {            
+        {
+            
             var direction = m_Rigidbody.velocity.normalized;
             var magnitude = m_Rigidbody.velocity.magnitude;
             m_Rigidbody.velocity = Vector3.zero;
@@ -26,12 +36,7 @@ namespace Flaskpost
             else
                 force = GameManager.Instance.Board.transform.up * magnitude / 2 * m_CharacterSettings.BouncePower -Physics.gravity;
 
-            if (force.magnitude > 10)
-                force = force.normalized *10;
-            else if(force.magnitude < 2)
-                force = force.normalized * 2;
-
-            m_Rigidbody.AddForce(force, ForceMode.Impulse);
+            Bounce(force);           
         }
 
         private void OnTriggerExit(Collider other)
@@ -70,6 +75,24 @@ namespace Flaskpost
         {
             m_Rigidbody.isKinematic = false;
             m_Rigidbody.gameObject.SetActive(true);
+        }
+
+        private void Bounce(Vector3 force)
+        {
+            StartCoroutine(BounceRoutine());
+            if (force.magnitude > 10)
+                force = force.normalized * 10;
+            else if (force.magnitude < 2)
+                force = force.normalized * 2;
+
+            m_Rigidbody.AddForce(force, ForceMode.Impulse);
+        }
+
+        private IEnumerator BounceRoutine()
+        {
+            m_Animator.SetBool("Bounce", true);
+            yield return new WaitForSeconds(1f);
+            m_Animator.SetBool("Bounce", false);
         }
     }
 }

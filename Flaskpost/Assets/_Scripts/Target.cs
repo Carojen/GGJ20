@@ -11,6 +11,8 @@ namespace Flaskpost
 
         [SerializeField]
         private GameObject m_Effects = null;
+
+        public bool Repaired { get { return !m_Target.activeSelf; } }
                
         private void OnTriggerEnter(Collider other)
         {
