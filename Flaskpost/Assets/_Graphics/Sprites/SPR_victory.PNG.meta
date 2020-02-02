@@ -1,0 +1,703 @@
+fileFormatVersion: 2
+guid: 781ec41e7b00eac4ebc3c1926ea144dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3689689758572821379
+    second: SPR_victory_0
+  - first:
+      213: -7598938213681506406
+    second: SPR_victory_1
+  - first:
+      213: -8078552287230136382
+    second: SPR_victory_2
+  - first:
+      213: -8095033032393722358
+    second: SPR_victory_3
+  - first:
+      213: 1270505740930577952
+    second: SPR_victory_4
+  - first:
+      213: 4494995497617815856
+    second: SPR_victory_5
+  - first:
+      213: 5706891007515232911
+    second: SPR_victory_6
+  - first:
+      213: -3617385119569192352
+    second: SPR_victory_7
+  - first:
+      213: 365195136248363861
+    second: SPR_victory_8
+  - first:
+      213: 6672489125205076371
+    second: SPR_victory_9
+  - first:
+      213: -3774231591217520036
+    second: SPR_victory_10
+  - first:
+      213: 9095542286805732354
+    second: SPR_victory_11
+  - first:
+      213: 6338327164194929774
+    second: SPR_victory_12
+  - first:
+      213: -2906528006214120498
+    second: SPR_victory_13
+  - first:
+      213: 5476746223940734255
+    second: SPR_victory_14
+  - first:
+      213: -7056536578749827429
+    second: SPR_victory_15
+  - first:
+      213: -4444552316865003766
+    second: SPR_victory_16
+  - first:
+      213: 8284039343845624954
+    second: SPR_victory_17
+  - first:
+      213: 3407576148641466240
+    second: SPR_victory_18
+  - first:
+      213: 1954331412054273909
+    second: SPR_victory_19
+  - first:
+      213: -7384613509921050640
+    second: SPR_victory_20
+  - first:
+      213: 6486178402352512327
+    second: SPR_victory_21
+  - first:
+      213: 3799393533372993179
+    second: SPR_victory_22
+  - first:
+      213: 2203523843616684930
+    second: SPR_victory_23
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_victory_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb36355e6acc16b42b05e00c71ecc102
+      internalID: -3689689758572821379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_1
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1250
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7a7f86583664d49aae98005f2f5bbe
+      internalID: -7598938213681506406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_2
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1250
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e315b4f871c10e498c0d8268f5e4cee
+      internalID: -8078552287230136382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_3
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 1250
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe59aed5b6bee7468b3226ea95ddbd7
+      internalID: -8095033032393722358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb2d349b8d4c8947abeff49939bb368
+      internalID: 1270505740930577952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_5
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1000
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da63bf284cc4bc34985e10d3985f19a2
+      internalID: 4494995497617815856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_6
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1000
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e391cb96968a6e4db089ad3ddf64afa
+      internalID: 5706891007515232911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_7
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 1000
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670d1d326ac6a754191c12234f03194c
+      internalID: -3617385119569192352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f436a056065d454a8a1aa8d278dbfec
+      internalID: 365195136248363861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_9
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 750
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058f26443001e8840b49290406ee9be6
+      internalID: 6672489125205076371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_10
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 750
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8917aa9b29dd9b4e9c7ed8039d30aeb
+      internalID: -3774231591217520036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_11
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 750
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac865df430019394eb59fe93afab020e
+      internalID: 9095542286805732354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db61241cd4d8a784681248c5b1f543d1
+      internalID: 6338327164194929774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_13
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 500
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06a350f53611e145a798888870c6655
+      internalID: -2906528006214120498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_14
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 500
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be88f6c9841e87840ac65926d2bd7169
+      internalID: 5476746223940734255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_15
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 500
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e9c9773ba951f4bb54a0c7b48b035e
+      internalID: -7056536578749827429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e47dcd6b914104dbbb700433dfa9e7
+      internalID: -4444552316865003766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_17
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 250
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b38ec2687d0b3043bacc0b3e16a79c1
+      internalID: 8284039343845624954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_18
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 250
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e178198d4fc7e85468dff7922c387116
+      internalID: 3407576148641466240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_19
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 250
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e491b4018e7f547b234fbcff0fecfd
+      internalID: 1954331412054273909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dd65fa52b369245a0fc95323985a15
+      internalID: -7384613509921050640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_21
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 0
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8d36e982e8b3546a078fa75cc105f3
+      internalID: 6486178402352512327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_22
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 0
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7eab8cb979bbce42b9945b2ba57fd0c
+      internalID: 3799393533372993179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_victory_23
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 0
+        width: 1039
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69d4679b26e53d49978c189d8fca3f3
+      internalID: 2203523843616684930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
