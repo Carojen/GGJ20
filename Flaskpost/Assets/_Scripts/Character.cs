@@ -17,6 +17,8 @@ namespace Flaskpost
         [SerializeField]
         private Animator m_Animator = null;
 
+        private bool m_IsColliding = false;
+
         private void Start()
         {
             if (m_Animator == null)
@@ -24,16 +26,16 @@ namespace Flaskpost
         }
 
         void OnCollisionEnter(Collision collision)
-        {            
+        {
             var direction = m_Rigidbody.velocity.normalized;
             var magnitude = m_Rigidbody.velocity.magnitude;
             m_Rigidbody.velocity = Vector3.zero;
             var force = Vector3.zero;
             if (collision.gameObject.CompareTag("Board"))
                 force = (Vector3.Reflect(direction, (collision.contacts[0].normal + GameManager.Instance.Board.transform.up * 0.5f).normalized)
-                    * magnitude / 2 * m_CharacterSettings.BouncePower) - Physics.gravity;
+                    * magnitude / 2 * m_CharacterSettings.BouncePower);
             else
-                force = GameManager.Instance.Board.transform.up * magnitude / 2 * m_CharacterSettings.BouncePower -Physics.gravity;
+                force = GameManager.Instance.Board.transform.up * magnitude / 2 * m_CharacterSettings.BouncePower;
 
             Bounce(force);           
         }
@@ -78,9 +80,10 @@ namespace Flaskpost
 
         private void Bounce(Vector3 force)
         {
+            force -= Physics.gravity;
             StartCoroutine(BounceRoutine());
-            if (force.magnitude > 10)
-                force = force.normalized * 10;
+            if (force.magnitude > 8)
+                force = force.normalized * 8;
             else if (force.magnitude < 2)
                 force = force.normalized * 2;
 
@@ -89,9 +92,11 @@ namespace Flaskpost
 
         private IEnumerator BounceRoutine()
         {
+            m_IsColliding = true;
             m_Animator.SetBool("Bounce", true);
             yield return new WaitForSeconds(1f);
             m_Animator.SetBool("Bounce", false);
+            m_IsColliding = false;
         }
     }
 }
