@@ -26,7 +26,7 @@ namespace Flaskpost
         private IEnumerator EffectRoutine()
         {
             m_Effects?.SetActive(true);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
             m_Effects?.SetActive(false);
         }
     }
